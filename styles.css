@@ -1,66 +1,46 @@
+/* Setting the general background and font styles */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #F8C8DC;
+    background-color: #FADADD; /* Pastel pink background */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cutesy font */
+    color: #6A4C93; /* Soft purple for general text */
 }
 
-/* Position the "No" button absolutely within body */
-#noButton {
-    position: absolute;
-    margin-left: 150px;
-    transition: 0.5s;
-    /* Smooth movement */
-}
-
-#yesButton {
-    position: absolute;
-    margin-right: 150px;
-    /* Smooth movement */
+.container {
+    text-align: center; /* Center everything in the container */
+    padding-top: 50px; /* Adds some space at the top of the container */
 }
 
 .header_text {
-    font-family: 'Nunito';
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    color: #FFB6C1; /* Lighter pink for the header text */
+}
+
+.gif_container img {
+    max-width: 100%; /* Ensures the GIF is responsive */
+    height: auto;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    /* optional: adds some space between the buttons */
+    margin-top: 20px; /* Adds some space above the buttons */
 }
 
 .btn {
-    background-color: #FFB6C1;
-    color: white;
-    padding: 15px 32px;
+    background-color: #FFC0CB; /* Soft pink background for buttons */
+    border: none; /* Removes the default border */
+    color: white; /* White text for the buttons */
+    padding: 15px 32px; /* Size of the buttons */
     text-align: center;
+    text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 2px; /* Spacing between buttons */
     cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .btn:hover {
-    background-color: #FAF9F6;
+    background-color: #FF69B4; /* Darker pink when hovering */
 }
 
-.gif_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 90px;
+#noButton {
+    position: absolute; /* Allows the button to move freely */
 }
