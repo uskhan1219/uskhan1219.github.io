@@ -1,75 +1,30 @@
+/* Setting the general background and font styles */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #F8C8DC;
+    background-color: #FFD1DC; /* A slightly different shade of pink for variation */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Maintaining the cutesy font choice */
+    color: #6A4C93; /* Consistent with the main page for a uniform look */
+    text-align: center; /* Centers the content */
+    padding-top: 50px; /* Adds some space at the top for a better layout */
 }
 
-/* Position the "No" button absolutely within body */
-#noButton {
-    position: absolute;
-    margin-left: 150px;
-    transition: 0.5s;
-    /* Smooth movement */
-}
-
-#yesButton {
-    position: absolute;
-    margin-right: 150px;
-    /* Smooth movement */
+.container {
+    margin: auto;
+    width: 90%; /* Ensures the container doesn't span the full width of the window */
 }
 
 .header_text {
-    font-family: 'Nunito';
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    color: #FF69B4; /* A vibrant pink for excitement */
+    margin-bottom: 20px; /* Adds some space below the header */
+}
+
+.gif_container img {
+    max-width: 100%; /* Ensures the GIF is responsive and fits within the container */
+    height: auto;
+    border-radius: 15px; /* Adds rounded corners for a softer look */
 }
 
 .text {
-    font-family: 'Nunito';
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    /* optional: adds some space between the buttons */
-}
-
-.btn {
-    background-color: #FFB6C1;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #FAF9F6;
-}
-
-.gif_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #FFB6C1; /* Lighter pink for body text */
+    font-size: 20px; /* Slightly larger font for readability */
+    margin-top: 20px; /* Adds space above the text for better layout */
 }
